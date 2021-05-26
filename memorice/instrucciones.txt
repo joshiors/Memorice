@@ -1,0 +1,22 @@
+    Comienzo:
+
+- Para abrir, tan solo debes ejecutar el archivo llamado "abrir.html", o solo "abrir".
+
+-Como podemos ver con las imágenes que vienen de ejemplo en la carpeta "img", para la selección de imágenes hay meter las imágenes que usarás en la carpeta "img" y nombrar cada una, con una "i" y un número, ascendentemente, comenzando por el 0.
+Ejemplo; primera imagen: i0.png; segunda: i1.png; tercera: i2.png; etc.
+
+-Las imágenes a usar deben ser ".png".
+
+-Para ingresar el número de parejas a generar, haz click en el globo con el ícono de "+", que está dentro de la página.
+
+
+    Tips:
+
+-Para cambiar colores véanse los botones "+" y "-" en el "globo +".
+
+-No hay un máximo de tarjetas a generar pero, para mantener estética, es recomendable no superar las 12 parejas (o 24 cartas).
+
+-No hay máximo de imágenes a agregar en la carpeta "img". Las imagenes que se usarán en el memorice son seleccionadas aleatoriamente de esa carpeta.7
+
+
+***cualquier duda, consulta o comentario, contactar en: matias.romv@gmail.com***
