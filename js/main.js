@@ -44,7 +44,7 @@ $(function(){
 
         for(let i=0; i<valsL; i++){
             $('.grid').append(`
-            <div class="card" id="c${i}"><p><img src="src/img/output/i${vals.splice([Math.floor(Math.random()*vals.length)],1)}.png"></p></div>`);
+            <div class="card" id="c${i}"><p><img src="img/output/i${vals.splice([Math.floor(Math.random()*vals.length)],1)}.png"></p></div>`);
         }
 
         if(valsL<10) {

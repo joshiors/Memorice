@@ -7,7 +7,7 @@ Es una aplicación que crea cartas pares con las imágenes que desees para jugar
 
 Instrucciones de inicio:
 
-1. Meter las imágenes ".png" que quieres usar en la carpeta "input" ubicada en la dirección "src/img/" (entrar en carpeta "src", luego carpeta "img").
+1. Meter las imágenes ".png" que quieres usar en la carpeta "input" ubicada en la dirección "img".
     - Las imágenes a usar deben ser ".png" para el estilo de las cartas (y porque el programa solo soporta este formato).
 
 2. Iniciar la aplicación haciendo click en el archivo "iniciar.bat".
