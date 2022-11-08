@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+
+//se presentan errores debido a las actualizaciones. Los errores son como cambio de ciertos parámetros para ajustar a las nuevas direcciones de las imágenes (ahora los URLS son más largos).
+
+//para funcionamiento correcto, el número de imágenes que se ingresen debe ser acorde y adecuado a las que luego querrás generar.
+
+// @REM podemos, de esta manera, poder ejecutar, desde el bat, código gulp y js.
+
+// src('src/img/input/*.{jpg,png}')
+//     .pipe( debug() )
+//     .pipe( dest('src/img/output') );
+//tratamos de usar un canal de recursos Vinyl pero no resultó muy adecuado. Tampoco promesas fetch.
+
+//hay un error potencial y es el tener imágenes ya guardadas previamente en el output, pero ejecutar una vez más la tarea imágenes, lo cual con toda seguridad repetiría nombres de imágenes o que se reescribirán. Podemos evitarlo contando, antes de ejecutar la función, cuántos archivos hay en output, y así que el valor de i sea de base la cant que ya hay en output.
+
+//actualizamos el ordenamiento a uno de gulp o más moderno con uso de dependencias externas.
+
+//ver cómo podemos ahorrarnos gulp, o instalarlo con comandos en iniciar bat (con npm install). Pero tratar de ahorrar gulp y luego nodejs.
+
+//podemos hacerlo con nodejs, con nodejs y gulp, y veremos si es posible sin ninguno de los mencionados (o al menos que no sea necesario tenerlos instalados). Aunque es bastante poco el peso de gulp, la cosa es que instalar node desde la terminal no es una opción, asi que debemos lograr prescindir de él.
+
+//intentar que en la primera carpeta (lo primero que se ve) solo esté el iniciar.bat, y si no, solo lo fundamental.
+
+// -relativizar el inicio de la app a cualquier dirección. "Variabilizarlo".
+
+// -hacer que la aplicación sea iniciable como un ejecutable bat, y que en ese mismo inicio se transformen las imágenes ingresadas a nombres con números, o inventar un nuevo sistema de lectura de las imágenes con los nuevos conocimientos de nodejs, js, etc.
+
+// -hacer pág github con instrucciones de uso más visuales.
+
+
+
+
+
+
+
+
+
+script.js:
+
+//conseguiremos los nombres de todas las imágenes, los guardaremos en un array y leeremos ese array desde js. /para que esto funcione debemos tener nodejs istalado, por lo que creo que no funcionará en otros pcs como el de la Jose.
+
+//hacer que compruebe si es png o jpg: hacerlo comprobando qué tiene (buscando match de a o b), o identificar qué tiene después del punto y concatenarlo en la dirección. / para actualizar el soporte a jpg también tenemos que modificar partes del main.js donde insertamos las imágenes para las tarjetas. / aunque deben ser si o si pngs porque o si no quedaría feo estéticamente. Bueno, hacer de las dos formas, pero primero con la modalidad png.
+
+
+
+
+iniciar.bat previo:
+
+echo Iniciando aplicacion... & npx gulp imagenes & explorer "index.html" & exit
+
+
+
+
+previo gulpfile.js:
+
+const {readdir, rename} = require("fs");
+
+function imagenes(done){
+
+    readdir('src/img/input', (err, files) => {
+        for(let i=0; i<files.length; i++){
+            rename(`src/img/input/${files[i]}`, `src/img/output/i${i}.png`, err => {
+                if (err) throw err;
+                console.log('Renombramiento completado!');
+              });
+        }
+    });
+
+    done();
+}
+
+exports.imagenes = imagenes;

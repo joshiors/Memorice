@@ -1,0 +1,1 @@
+echo Iniciando aplicacion... & node script.js & explorer "index.html" & exit

@@ -1,0 +1,34 @@
+¿Qué es esta aplicación? 
+Es una aplicación que crea cartas pares con las imágenes que desees para jugar un juego de memorice. Puedes generar la cantidad de cartas que desees desde dentro de la aplicación.
+
+
+-o-o-o-o-o-o-o-o-o-o-o-o-
+
+
+Instrucciones de inicio:
+
+1. Meter las imágenes ".png" que quieres usar en la carpeta "input" ubicada en la dirección "src/img/" (entrar en carpeta "src", luego carpeta "img").
+    - Las imágenes a usar deben ser ".png" para el estilo de las cartas (y porque el programa solo soporta este formato).
+
+2. Iniciar la aplicación haciendo click en el archivo "iniciar.bat".
+
+3. ¡Usar la aplicación!
+
+
+-o-o-o-o-o-o-o-o-o-o-o-o-
+
+
+Uso de la aplicación y tips:
+
+- Para ingresar el número de parejas de cartas a generar, haz click en el globo con el ícono de "+".
+    - No hay un máximo de tarjetas a generar pero, para mantener estética, es recomendable no superar las 12 parejas (o 24 cartas).
+
+- Para cambiar colores véanse los botones "+" y "-" dentro del "globo +".
+
+
+
+
+
+versión 2.0 - reparando errres para la 2.5.
+
+***cualquier duda, consulta, comentario o error, contactar en: m.romov244@gmail.com***
