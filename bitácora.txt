@@ -1,51 +1,51 @@
+-o-o-o-o-o- ESTAS ANOTACIONES SON PARTE DE UNA BITÁCORA SOBRE EL PROGRESO DEL PROGRAMA, PERO NO HAY NADA ÚTIL O NECESARIO PARA EL USUARIO QUE LO USARÁ. PARA TODA INDICACIÓN SOBRE EL PROGRAMA, LEER EL ARCHIVO "INSTRUCCIONES.TXT". -o-o-o-o-o-
 
 
 
 
 
+-o-o-o-o-o- POR HACER -o-o-o-o-o-
+
+-Prescindir de nodejs. El programa puede hacerse con nodejs, con nodejs y gulp, pero debemos intentar sin ninguno de los mencionados (o al menos que no sea necesario tenerlos instalados). Qué está haciendo nodeJS en el programa? dónde está ramificado? qué funcionalidades está haciendo? Luego de responder estas preguntas podemos ir reemplazando cada una de estas ramificaciones de nodeJS.
+    -node es el que ejecuta el scriptjs. Debemos ver cómo ejecutarlo sin node.
+    -el require y las funciones de fs no son código nativo de js, sino que son provistos por nodejs, por lo que ejecutar, simplemente, el script.js con otro ejecutador no servirá y mandará error.
+    -node nos proporciona la dependencia "fs", o "file system", la cual es la que nos permite renombrar las imágenes. Ver cómo usar file system remotamente, sin necesidad de tenerlo descargado, o si no es posible, ver cómo hacer lo que "fs" hace de otra manera. Revisar el código de fs para ver.
+    -ya tenemos idenitifado todo el cuerpo de nodejs en el proyecto, ahora a reemplazar sus partes sin alterar el programa, como el barco de Teseo.
+
+-en realidad si instalan nodejs todo se "sencillifica" para usar otros programas que yo podré estar haciendo. Ver cómo instalar nodejs desde el propio bat o, indirectamente, desde el scriptjs.
+
+-script.js: hacer que compruebe si es png o jpg: hacerlo comprobando qué tiene (buscando match de a o b), o identificar qué tiene después del punto y concatenarlo en la dirección. / para actualizar el soporte a jpg también tenemos que modificar partes del main.js donde insertamos las imágenes para las tarjetas. / aunque deben ser si o si pngs porque o si no quedaría feo estéticamente. Bueno, hacer de las dos formas, pero primero con la modalidad png y dejar como una opción muy secundaria el admitir jpg, pues no pasa nada grave ni ningún error fatal si cambiamos una imagen webp, jpg, jpeg, etc., a png.
+
+-hacer pág github con unas instrucciones de uso más visuales.
 
 
 
-//se presentan errores debido a las actualizaciones. Los errores son como cambio de ciertos parámetros para ajustar a las nuevas direcciones de las imágenes (ahora los URLS son más largos).
 
-//para funcionamiento correcto, el número de imágenes que se ingresen debe ser acorde y adecuado a las que luego querrás generar.
 
-// @REM podemos, de esta manera, poder ejecutar, desde el bat, código gulp y js.
+-o-o-o-o-o- RESUELTOS -o-o-o-o-o-
+
+hacer que la aplicación sea iniciable como un ejecutable bat, y que en ese mismo inicio se transformen las imágenes ingresadas a nombres con números, o inventar un nuevo sistema de lectura de las imágenes con los nuevos conocimientos de nodejs, js, etc.
+
+se presentan errores debido a las actualizaciones. Los errores son como cambio de ciertos parámetros para ajustar a las nuevas direcciones de las imágenes (ahora los URLS son más largos).
+
+para funcionamiento correcto, el número de imágenes que se ingresen debe ser acorde y adecuado a las que luego querrás generar.
+
+actualizamos el ordenamiento a uno de gulp o más moderno con uso de dependencias externas.
+
+echo Iniciando aplicacion... & node script.js & explorer "index.html" & exit
+@REM podemos, de esta manera, poder ejecutar, desde el bat, código gulp y js.
 
 // src('src/img/input/*.{jpg,png}')
 //     .pipe( debug() )
 //     .pipe( dest('src/img/output') );
-//tratamos de usar un canal de recursos Vinyl pero no resultó muy adecuado. Tampoco promesas fetch.
+tratamos de usar un canal de recursos Vinyl pero no resultó muy adecuado. Tampoco promesas fetch.
 
-//hay un error potencial y es el tener imágenes ya guardadas previamente en el output, pero ejecutar una vez más la tarea imágenes, lo cual con toda seguridad repetiría nombres de imágenes o que se reescribirán. Podemos evitarlo contando, antes de ejecutar la función, cuántos archivos hay en output, y así que el valor de i sea de base la cant que ya hay en output.
+-intentar que en la primera carpeta (lo primero que se ve) solo esté el iniciar.bat, y si no, solo lo fundamental. Meter en una carpeta src todos los recursos.
 
-//actualizamos el ordenamiento a uno de gulp o más moderno con uso de dependencias externas.
+-hay un error potencial y es el tener imágenes ya guardadas previamente en el output y después ejecutar una vez más la tarea imágenes, se repetirían nombres de imágenes o se reescribirán. Podemos evitarlo contando, antes de ejecutar la función, cuántos archivos hay en output, y así que el valor de i sea de base la cant que ya hay en output.
 
-//ver cómo podemos ahorrarnos gulp, o instalarlo con comandos en iniciar bat (con npm install). Pero tratar de ahorrar gulp y luego nodejs.
+-antes hacíamos el renombramiento de imágenes y redirección con una tarea gulp.
 
-//podemos hacerlo con nodejs, con nodejs y gulp, y veremos si es posible sin ninguno de los mencionados (o al menos que no sea necesario tenerlos instalados). Aunque es bastante poco el peso de gulp, la cosa es que instalar node desde la terminal no es una opción, asi que debemos lograr prescindir de él.
-
-//intentar que en la primera carpeta (lo primero que se ve) solo esté el iniciar.bat, y si no, solo lo fundamental.
-
-// -relativizar el inicio de la app a cualquier dirección. "Variabilizarlo".
-
-// -hacer que la aplicación sea iniciable como un ejecutable bat, y que en ese mismo inicio se transformen las imágenes ingresadas a nombres con números, o inventar un nuevo sistema de lectura de las imágenes con los nuevos conocimientos de nodejs, js, etc.
-
-// -hacer pág github con instrucciones de uso más visuales.
-
-
-
-
-
-
-
-
-
-script.js:
-
-//conseguiremos los nombres de todas las imágenes, los guardaremos en un array y leeremos ese array desde js. /para que esto funcione debemos tener nodejs istalado, por lo que creo que no funcionará en otros pcs como el de la Jose.
-
-//hacer que compruebe si es png o jpg: hacerlo comprobando qué tiene (buscando match de a o b), o identificar qué tiene después del punto y concatenarlo en la dirección. / para actualizar el soporte a jpg también tenemos que modificar partes del main.js donde insertamos las imágenes para las tarjetas. / aunque deben ser si o si pngs porque o si no quedaría feo estéticamente. Bueno, hacer de las dos formas, pero primero con la modalidad png.
 
 
 
@@ -57,7 +57,8 @@ echo Iniciando aplicacion... & npx gulp imagenes & explorer "index.html" & exit
 
 
 
-previo gulpfile.js:
+
+gulpfile.js previo:
 
 const {readdir, rename} = require("fs");
 
