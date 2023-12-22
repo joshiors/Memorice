@@ -3,5 +3,6 @@ Juego didáctico para infantes basado en el clásico juego de memorizar las cart
 
 Se requiere tener NodeJS en el dispositivo para usar la aplicación.
 
-# To Do
+## To Do
 - Independizarnos de NodeJS. Lograr una versión que no lo requiera.
+- Hacer branches con versiones dependientes de herramientas como NodeJS (y que su instalación sea lo más sencillo posible) y otras independientes de esta herramienta.
