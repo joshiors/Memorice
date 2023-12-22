@@ -55,3 +55,4 @@ Para usar este programa es necesario tener instalado el programa "NodeJS". Para 
 - [ ] Independizarnos de NodeJS. Lograr una versión que no lo requiera.
 - [ ] Hacer branches con versiones dependientes de herramientas como NodeJS (y que su instalación sea lo más sencillo posible con la ejecución de un simple comando en powershell, bat o cmd) y otras independientes de esta herramienta.
 - [ ] Ubicar la carpeta "img" en el root principal.
+- [ ] Explicar uso de instalador en "README.md".
