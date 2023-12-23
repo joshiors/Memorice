@@ -1,1 +1,1 @@
-echo Iniciando aplicacion... & node script.js & explorer "index.html" & exit
+echo Iniciando aplicacion... & py main.py & explorer "index.html" & exit
