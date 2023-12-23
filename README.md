@@ -6,7 +6,7 @@ Es una aplicación que emula el juego de memorizar parejas de cartas. Crea pares
 
 ## Requerimientos:
 
-Para usar este programa es necesario tener instalado el programa "NodeJS". Para instalarlo, ejecuta el programa "instalar.bat" o puedes dirigirte a la página https://nodejs.org/en/, descargar la versión que dice "recomendado para la mayoría" e instalarla.
+Para usar este programa es necesario tener instalado el programa "Python", que puedes encontrar en su web oficial https://www.python.org/downloads/.
 
 
 
