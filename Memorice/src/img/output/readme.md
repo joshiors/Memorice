@@ -1,0 +1,1 @@
+<!-- the existence of this folder is crucial to the project and user that will use it -->
