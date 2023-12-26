@@ -6,7 +6,7 @@ Es una aplicación que emula el juego de memorizar parejas de cartas. Crea pares
 
 ## Requerimientos:
 
-Para usar este programa es necesario tener instalado el programa "NodeJS". Para instalarlo, ejecuta el programa "instalar.bat" o puedes dirigirte a la página https://nodejs.org/en/, descargar la versión que dice "recomendado para la mayoría" e instalarla.
+Ser usuario de Windows (aunque no ha sido probada en MAC).
 
 
 
@@ -14,7 +14,7 @@ Para usar este programa es necesario tener instalado el programa "NodeJS". Para 
 
 ## Instrucciones de uso:
 
-1. Poner las imágenes "png" que quieres usar en la carpeta "input" ubicada en la carpeta "img", que está dentro de la carpeta "src".
+1. Poner las imágenes "png" que quieres usar en la carpeta "input", ubicada en la carpeta "img", que a su vez está dentro de la carpeta "src" (*"src\img\input\"*).
 
 2. Iniciar la aplicación ejecutando el archivo "iniciar" o "iniciar.bat".
 
@@ -41,17 +41,18 @@ Para usar este programa es necesario tener instalado el programa "NodeJS". Para 
 
 
 
-*versión 2.5*
 
-**cualquier duda, consulta, comentario o error que veas, dímelo en: m.romov244@gmail.com**
+
+**--- *versión 3.0*. Cualquier duda, consulta, comentario o error que veas, envíamelo a través de: m.romov244@gmail.com ---**
 
 
 
 
 
 ## To Do
-- [ ] Lograr una versión que no requiera NodeJS, Python ni nada que instalar, puramente herramientas nativas en Windows o Chrome.
-- [ ] Hacer branches con versiones dependientes de herramientas como NodeJS (y que su instalación sea lo más sencillo posible con la ejecución de un simple comando en powershell, bat o cmd) y otras independientes de esta herramienta.
+- [ ] Soporte de imágenes "jpg".
 - [ ] Ubicar la carpeta "img" en el root principal.
+- [x] Hacer branches con versiones dependientes de herramientas como NodeJS (y que su instalación sea lo más sencillo posible con la ejecución de un simple comando en powershell, bat o cmd) y otras independientes de esta herramienta.
+- [x] Lograr una versión que no requiera NodeJS, Python ni nada que instalar, puramente herramientas nativas en Windows o Chrome.
 - [x] Independizarnos de NodeJS. Lograr una versión que no lo requiera.
 - [x] Explicar uso de instalador en "README.md".
