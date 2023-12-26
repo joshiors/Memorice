@@ -6,7 +6,7 @@ Es una aplicación que emula el juego de memorizar parejas de cartas. Crea pares
 
 ## Requerimientos:
 
-Ser usuario de Windows (aunque no ha sido probada en MAC).
+Ser usuario de Windows 7 o más (aunque no ha sido probada en MAC).
 
 
 
