@@ -26,7 +26,7 @@ Ser usuario de Windows 7 o más (aunque no ha sido probada en MAC).
 
 ## Uso de la aplicación y recomendaciones:
 
-- Puedes usar imágenes jpg, jpeg o webp y el programa no presentará ningún problema, pero se recomienda que completamente usar "png" para que las imágenes de las cartas tengan un fondo transparente y se vea mejor estéticamente.
+- Puedes usar imágenes jpg, jpeg o webp, además de las png, y el programa no presentará ningún problema, pero se recomienda, sobre todo, usar "png" para que las imágenes de las cartas tengan un fondo transparente y se vea mejor estéticamente.
 
 - También, por el estilo de las cartas y su estética, se recomienda usar imágenes que sean más alargadas que anchas.
   
@@ -50,8 +50,8 @@ Ser usuario de Windows 7 o más (aunque no ha sido probada en MAC).
 
 
 ## To Do
-- [ ] Soporte de imágenes "jpg".
 - [ ] Ubicar la carpeta "img" en el root principal.
+- [x] Soporte de imágenes "jpg", "webp" y "jpeg".
 - [x] Hacer branches con versiones dependientes de herramientas como NodeJS (y que su instalación sea lo más sencillo posible con la ejecución de un simple comando en powershell, bat o cmd) y otras independientes de esta herramienta.
 - [x] Lograr una versión que no requiera NodeJS, Python ni nada que instalar, puramente herramientas nativas en Windows o Chrome.
 - [x] Independizarnos de NodeJS. Lograr una versión que no lo requiera.
