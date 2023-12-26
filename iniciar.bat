@@ -1,1 +1,2 @@
-echo Iniciando aplicacion... & node script.js & explorer "index.html" & exit
+@echo off
+powershell.exe -Command "Start-Process powershell -ArgumentList '-ExecutionPolicy Unrestricted -File \"%~dp0script.ps1\"' -Verb RunAs"
