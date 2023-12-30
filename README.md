@@ -43,7 +43,7 @@ Ser usuario de Windows 7 o más (aunque no ha sido probada en MAC).
 
 
 
-**--- *versión 3.1*. Cualquier duda, consulta, comentario o error que veas, envíamelo a través de: m.romov244@gmail.com ---**
+**--- *versión 3.2*. Cualquier duda, consulta, comentario o error que veas, envíamelo a través de: m.romov244@gmail.com ---**
 
 
 
