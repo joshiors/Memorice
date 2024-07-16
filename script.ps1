@@ -50,4 +50,4 @@ if($output_list_final_len -gt 0){
 } else {
     Write-Output "Hay $output_list_final_len imágenes en la carpeta. Porfavor, añade al menos una."
 }
-# Read-Host -Prompt "Apreta Enter para salir"
+# Read-Host -Prompt "Aprieta Enter para salir"
