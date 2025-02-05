@@ -2,7 +2,7 @@
 Juego didáctico para infantes basado en el clásico juego de memorizar las cartas, darlas vuelta y buscar emparejar dos que tengan la misma imagen al reverso.
 
 ### ¿Qué es esta aplicación? 
-Es una aplicación que emula el juego de memorizar parejas de cartas. Crea pares de cartas con las imágenes que desees para jugar. A su vez, puedes generar la cantidad de cartas que desees desde dentro de la aplicación.
+Es una aplicación que emula el juego de memorizar parejas de cartas. Crea pares de cartas con las imágenes que quieras. A su vez, puedes generar la cantidad de cartas que desees desde dentro de la aplicación.
 
 ## Requerimientos:
 
