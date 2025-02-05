@@ -50,6 +50,7 @@ Ser usuario de Windows 7 o más (no ha sido probada en MAC).
 
 
 ## To Do
+- [ ] Agregar un gif al "README.md".
 - [ ] Ubicar la carpeta "img" en el root principal.
 - [x] Soporte de imágenes "jpg", "webp" y "jpeg".
 - [x] Hacer branches con versiones dependientes de herramientas como NodeJS (y que su instalación sea lo más sencillo posible con la ejecución de un simple comando en powershell, bat o cmd) y otras independientes de esta herramienta.
